@@ -37,4 +37,39 @@
 
   </div>
 
+  <div class="row">
+    <div class="form-group col">
+      <label for="">Payment Amount</label>
+      <div>
+        <input type="" class="form-control" (input)="OnAmountChange($any($event.target).value)" />
+      </div>
+    </div>
+
+
+    <div class="col">
+      <label for=""><b>Payment Amount</b></label>
+      <div>
+        {{ amount | currency: 'INR'}}
+      </div>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="form-group col">
+      <label for="">Height</label>
+      <div>
+        <input type="" class="form-control" (input)="OnHeightChange($any($event.target).value)" />
+      </div>
+    </div>
+
+
+    <div class="col">
+      <label for=""><b>Height</b></label>
+      <div>
+        {{ height | number: '1.0-0'}}
+      </div>
+    </div>
+
+  </div>
+
 </div>
